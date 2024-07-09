@@ -3,15 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/LoginAndSignUp.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/AddFlight.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/UpdateTicket.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/CancelTicket.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/SignUp.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/HomePage.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/BookDetails.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/Login.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/loginandsignup/BookTicket.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/View/SignUp.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/AirlineReservationSystem/src/View/LoginAndSignUp.java</file>
         </group>
     </open-files>
 </project-private>
