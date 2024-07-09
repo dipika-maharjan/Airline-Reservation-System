@@ -194,6 +194,16 @@ public class AddFlight extends javax.swing.JFrame {
         Update_Button.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Update_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/updateicon.png"))); // NOI18N
         Update_Button.setText("Update");
+        Update_Button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Update_ButtonMouseClicked(evt);
+            }
+        });
+        Update_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Update_ButtonActionPerformed(evt);
+            }
+        });
 
         Search_Button.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Search_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/searchicon.png"))); // NOI18N
@@ -433,6 +443,16 @@ public class AddFlight extends javax.swing.JFrame {
     private void arrivalTimeFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arrivalTimeFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_arrivalTimeFieldActionPerformed
+
+    private void Update_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Update_ButtonMouseClicked
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_Update_ButtonMouseClicked
+
+    private void Update_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Update_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Update_ButtonActionPerformed
 
     
     public static void main(String args[]) {

@@ -72,7 +72,7 @@ public class SignUp extends javax.swing.JFrame {
         jLabel1.setText("SIGN UP");
 
         Email_Label.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Email_Label.setText("Email :");
+        Email_Label.setText("User Name :");
 
         emailField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         emailField.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +100,11 @@ public class SignUp extends javax.swing.JFrame {
         Signup_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Signup_ButtonMouseClicked(evt);
+            }
+        });
+        Signup_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Signup_ButtonActionPerformed(evt);
             }
         });
 
@@ -245,8 +250,15 @@ public class SignUp extends javax.swing.JFrame {
                 // Execute the query
                 int rowsAffected = ps.executeUpdate();
                 if (rowsAffected > 0) {
-             
-                    JOptionPane.showMessageDialog(this, "User Registered Successfully!","Signup Info", JOptionPane.INFORMATION_MESSAGE);
+                if (emailField.getText().isEmpty() || passwordField.getPassword().length == 0 || confirmPasswordFiled.getPassword().length == 0) {
+                 JOptionPane.showMessageDialog(this, "All information are required", "Error", JOptionPane.WARNING_MESSAGE);
+                    }else{
+                        JOptionPane.showMessageDialog(this, "User Registered Successfully!","Signup Info", JOptionPane.INFORMATION_MESSAGE);
+                        this.dispose();
+                        Login LoginUpFrame = new Login();
+                        LoginUpFrame.setVisible(true);
+             }
+
                 } else {
                     System.out.println("Error: User registration failed.");
                 }
@@ -258,6 +270,10 @@ public class SignUp extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Password and Confirm password must be same", "Error",JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_Signup_ButtonMouseClicked
+
+    private void Signup_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Signup_ButtonActionPerformed
+            // TODO add your handling code here:
+    }//GEN-LAST:event_Signup_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
